@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+    
+  python:
+        container_name: python
+        build: 
+          context: .
+          dockerfile: Dockerfile
+    
+        command:  bash -c "python teste.py "
+        volumes:
+          - .:/app
+
+        networks:
+          - rede-docker
+
+networks:
+  rede-docker:
+    driver: bridge
