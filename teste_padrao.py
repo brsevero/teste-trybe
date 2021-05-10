@@ -34,7 +34,7 @@ class TestePadrao(unittest.TestCase):
         self.nome.submit()
 
         self.email = self.driver.find_element_by_id("email")
-        self.email.send_keys("ada@lovelace.com")
+        self.email.send_keys("ada@lolace.com")
         self.email.submit()
 
         self.senha = self.driver.find_element_by_id("password")

@@ -32,7 +32,7 @@ class TesteNome(unittest.TestCase):
         self.nome.submit()
 
         self.email = self.driver.find_element_by_id("email")
-        self.email.send_keys("ada@lovelace1.com")
+        self.email.send_keys("ada@lolace1.com")
         self.email.submit()
 
         self.senha = self.driver.find_element_by_id("password")
