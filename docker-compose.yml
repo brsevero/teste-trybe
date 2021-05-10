@@ -8,7 +8,7 @@ services:
           context: .
           dockerfile: Dockerfile
     
-        command:  bash -c "python teste.py "
+        command:  bash -c "python main.py "
         volumes:
           - .:/app
 
