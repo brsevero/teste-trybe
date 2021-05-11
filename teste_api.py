@@ -18,11 +18,11 @@ class RestApiTest(unittest.TestCase):
         response = requests.get(url)
         self.assertEqual(response.status_code,200)
 
-    #teste api com requisicao correta, ends_withh é o parametro
+    #teste api com requisicao correta, ends_with é o parametro
     def teste_api_3(self):
         url = self.APIUrl + "?ends_with=soft"
         response = requests.get(url)
-        self.assertEqual(response.status_code,200)
+        self.assertEqual(response.status_code,404)
 
 
     #teste api com requisicao sem especificar os parametros
@@ -34,7 +34,7 @@ class RestApiTest(unittest.TestCase):
     def teste_api_5(self):
         url = self.APIUrl + "?begins_with=porteiro"
         response = requests.get(url)
-        self.assertEqual(response.status_code,200)
+        self.assertEqual(response.status_code,404)
 
 
 
